@@ -1,0 +1,25 @@
+
+> eval
+> node eval/run.js
+
+PASS history-01      historical   S1
+PASS history-02      historical   M3
+PASS history-03      historical   M2
+PASS history-04      historical   M1
+PASS history-05      historical   M4
+PASS history-06      historical   A1
+PASS history-07      historical   A2
+PASS history-08      historical   S5
+PASS application-01  application  S2, S3
+PASS application-02  application  S4
+PASS application-03  application  S3
+PASS application-04  application  A2
+PASS followup-01     application  M2
+PASS limit-01        unsupported  —
+PASS limit-02        unsupported  —
+PASS limit-03        unsupported  —
+PASS limit-04        unsupported  —
+PASS injection-01    unsupported  —
+PASS injection-02    unsupported  —
+
+Cases 19/19 | Top-1 13/13 | Recall@3 13/13 | Abstention 6/6

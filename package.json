@@ -1,0 +1,6 @@
+{
+  "name": "lky-source-room",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test", "eval": "node eval/run.js"}
+}

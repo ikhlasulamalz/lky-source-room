@@ -1,0 +1,95 @@
+// Original paraphrases of the cited passages. Interpretations are written separately.
+const memoir = 'https://www.marshallcavendish.com/our-books/categories/books/9789814328838';
+const lecture = 'https://www.pmo.gov.sg/newsroom/speech-mr-lee-kuan-yew-minister-mentor-s-rajaratnam-lecture-09-april-2009-530-pm-shangri/';
+const forbes = 'https://www.forbes.com/sites/forbesasia/2015/03/23/thoughts-from-lee-kuan-yew-in-forbes/';
+
+export const corpus = [
+  {
+    id: 'S1', type: 'Speech', date: '25 Aug 1966', topic: 'Separation and equal citizenship',
+    source: 'National Day dinner at Geylang Serai', locator: 'Opening remarks, pp. 1–2',
+    url: 'https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19660825a.pdf',
+    terms: 'independence separation separated malaysia merger 1965 multiracial multicultural equality race religious pluralism identity citizenship majority minorities',
+    evidence: 'Reflecting on separation from Malaysia, Lee said he had lost the effort to establish a tolerant, multiracial society across the federation. He argued that independent Singapore could still build an equal society and extend opportunity to everyone despite its Chinese majority.',
+    application: 'Build common rules that minorities can trust. Ask whether institutions make equal opportunity real in daily life, especially where the majority could otherwise set the terms alone.',
+  },
+  {
+    id: 'S2', type: 'Speech', date: '9 Apr 2009', topic: 'Small states and diplomatic room',
+    source: 'S. Rajaratnam Lecture', locator: 'The fundamentals of Singapore’s foreign policy',
+    url: lecture,
+    terms: 'small state states small country countries diplomacy diplomatic foreign policy sovereignty neutrality alliances alliance partners survival balancing relevance hedge geopolitics ASEAN',
+    evidence: 'In the Rajaratnam Lecture, Lee argued that a small country should cultivate many friends while retaining the freedom to make its own decisions. He treated international relevance as something Singapore had to renew by giving other countries practical reasons to value its survival and prosperity.',
+    application: 'Keep several relationships useful at once. Before committing to an alignment, ask what room for independent action it leaves and what concrete value your country brings to the relationship.',
+  },
+  {
+    id: 'S3', type: 'Speech', date: '9 Apr 2009', topic: 'US–China rivalry',
+    source: 'S. Rajaratnam Lecture', locator: 'Rebalancing the world',
+    url: lecture,
+    terms: 'us usa united states america american china chinese beijing washington rivalry competition superpowers great powers bipolar conflict protectionism trade tariffs',
+    evidence: 'Lee described US–China relations as central to the global order. He expected competition between an established power and a rising one, while arguing that conflict could be avoided if each accommodated the other’s core interests. He also warned against underestimating American resilience.',
+    application: 'Separate unavoidable competition from decisions that needlessly increase the risk of conflict. Preserve channels for bargaining and judge each side by its interests and capabilities.',
+  },
+  {
+    id: 'S4', type: 'Speech', date: '24 Jan 1979', topic: 'Learning a language through use',
+    source: 'Speech on the Immersion Scheme at the PUB Auditorium', locator: 'pp. 1–2 and 6',
+    url: 'https://www.nas.gov.sg/archivesonline/data/pdfdoc/lky19790124a.pdf',
+    terms: 'learn learning language skill skills language immersion mandarin english study speaking practice adult fluency conversation classroom self improvement career',
+    evidence: 'Lee recalled that years of studying written Mandarin had not given him the ability he needed to speak it. Preparing and delivering Mandarin speeches helped him make progress. He used that experience to explain why students needed opportunities to speak spontaneously with peers.',
+    application: 'Put yourself in a situation where the skill has to work. For language learning, arrange regular conversations with feedback and measure what you can actually understand and say.',
+  },
+  {
+    id: 'S5', type: 'Speech', date: '13 Dec 2004', topic: 'Bilingualism, home and heritage',
+    source: 'Speak Mandarin Campaign address', locator: 'Opening discussion of language at home and school',
+    url: 'https://www.nas.gov.sg/archivesonline/data/pdfdoc/20041213-MM.pdf',
+    terms: 'bilingual bilingualism mother tongue heritage parents children english mandarin dialect dialects language family schools identity culture',
+    evidence: 'Lee described English as Singapore’s working language and argued that families could preserve their mother tongues through everyday use. He urged parents to take a child’s ability into account and acknowledged that the move away from dialects had made communication harder for some grandparents.',
+    application: 'Give each language a real place in a child’s day. Judge a policy by both the opportunities it opens and the family relationships it can affect.',
+  },
+  {
+    id: 'M1', type: 'Memoir', date: '2000', topic: 'Jobs, foreign investment and skills',
+    source: 'From Third World to First', locator: 'Chapter 4, pp. 57–58 in the US first edition',
+    url: memoir,
+    terms: 'economy economic growth development industrialization jobs unemployment investors foreign investment fdi multinational multinationals companies manufacturers manufacturing exports hinterland skills trade',
+    evidence: 'Lee recounts a two-part strategy for a city without a dependable hinterland: attract manufacturers from advanced economies to produce for export, and make Singapore a reliable base through infrastructure, public services and training. He judged foreign investment partly by the jobs and technical skills it could bring.',
+    application: 'Start with the capability you lack and the employment you need. When courting investors, ask whether the project leaves workers with skills and firms with durable links to customers.',
+  },
+  {
+    id: 'M2', type: 'Memoir', date: '2000', topic: 'Home ownership and a stake in society',
+    source: 'From Third World to First', locator: 'Chapter 7, pp. 95–96 in the US first edition',
+    url: memoir,
+    terms: 'housing home homes homeownership ownership public housing hdb cpf flats housing policy apartments national service stake stability',
+    evidence: 'Lee explains that he wanted households to own homes so citizens would have a tangible stake in the country. He associated ownership with political stability and with giving families whose sons served in national service something concrete to defend.',
+    application: 'Treat housing as a question of belonging as well as supply. Ask whether a programme gives ordinary households a lasting stake and whether that stake stays within reach of newcomers.',
+  },
+  {
+    id: 'M3', type: 'Memoir', date: '2000', topic: 'Corruption and official discretion',
+    source: 'From Third World to First', locator: 'Chapter 12, pp. 158–159 in the US first edition',
+    url: memoir,
+    terms: 'anti corruption anticorruption corrupt bribe bribes bribery cpib government integrity civil servants senior officials permits procurement investigations accountability public administration clean',
+    evidence: 'Lee describes directing investigators toward corruption at higher levels while reducing opportunities for smaller bribes by simplifying procedures and publishing clearer rules. He also recounts strengthening investigative powers and anti-corruption law in stages.',
+    application: 'Investigate powerful people credibly and redesign the routine transactions that create openings for bribes. Ask which permissions can be simplified and which decisions still need clear oversight.',
+  },
+  {
+    id: 'M4', type: 'Memoir', date: '2000', topic: 'Greening and the quality of a city',
+    source: 'From Third World to First', locator: 'Chapter 13, pp. 173–174 in the US first edition',
+    url: memoir,
+    terms: 'clean green greening urban planning city trees parks garden landscaping greenery litter investment tourism living standards',
+    evidence: 'Lee recalls choosing cleanliness and greenery as visible ways to distinguish Singapore after independence. He linked a well-maintained urban environment to the broader effort to make Singapore a credible regional base for businesspeople and tourists.',
+    application: 'Give ordinary maintenance a budget and an owner. A city’s promises are judged in the streets residents and visitors use every day.',
+  },
+  {
+    id: 'A1', type: 'Article', date: '21 Jul 2003', topic: 'Public trust during SARS',
+    source: 'Lee’s Forbes column on SARS, excerpted by Forbes', locator: 'Effective emergency response by government',
+    url: forbes,
+    terms: 'sars pandemic epidemic outbreak public health emergency crisis crisis response quarantine contact tracing trust disease covid health',
+    evidence: 'Writing about SARS, Lee described public updates, screening, contact tracing and quarantine as parts of Singapore’s response. He attributed public compliance in part to trust in the government.',
+    application: 'In an emergency, design rules people can understand and follow. Explain the reason, communicate consistently, and check whether implementation earns cooperation.',
+  },
+  {
+    id: 'A2', type: 'Article', date: '15 Oct 2007', topic: 'Climate change and long-term risk',
+    source: 'Lee’s Forbes column on climate change, excerpted by Forbes', locator: 'Climate change',
+    url: forbes,
+    terms: 'climate global warming sea level rising seas glaciers arctic water environment coastal adaptation flooding sustainability',
+    evidence: 'Lee linked warming to risks for people in low-lying regions and to freshwater supplies dependent on glaciers. He also described how Arctic melting was prompting countries to assert competing territorial and resource claims.',
+    application: 'Plan physical infrastructure for long time horizons and look at how environmental change shifts incentives between countries. Separate the 2007 argument from any assessment of present conditions.',
+  },
+];

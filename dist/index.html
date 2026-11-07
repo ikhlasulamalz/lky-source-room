@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A source-grounded historical chatbot for exploring Lee Kuan Yew’s ideas.">
+  <title>What Would Lee Kuan Yew Do? | The Source Room</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="mast">
+    <div class="frame mast-inner">
+      <a class="identity" href="./"><span class="stamp" aria-hidden="true">SR</span> The Source Room</a>
+      <span class="edition">Historical AI study · 01</span>
+    </div>
+  </header>
+  <main class="frame">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow"><span></span> SINGAPORE · LEADERSHIP &amp; HISTORY</p>
+      <h1 id="title">What would<br>Lee Kuan Yew do?</h1>
+      <p class="dek">Explore the choices behind his speeches, writings and memoir. Ask a question, then inspect the sources behind the answer.</p>
+      <p class="disclosure">AI interpretation inspired by Lee Kuan Yew. Historical views and modern applications are labeled separately.</p>
+    </section>
+    <div class="layout">
+      <section class="conversation" aria-label="Conversation">
+        <header class="panel-head">
+          <div><p class="eyebrow">01 / CONVERSATION</p><h2>Ask the archive</h2></div>
+          <button type="button" class="quiet" id="clear">New chat</button>
+        </header>
+        <div id="messages" role="log" aria-live="polite" aria-label="Chat messages">
+          <div class="welcome" id="welcome">
+            <p>Start with a question about a decision, a trade-off, or a lesson you can apply.</p>
+            <div class="starters">
+              <button type="button">Why did Singapore encourage home ownership?</button>
+              <button type="button">What should a small state do when great powers compete?</button>
+              <button type="button">How should I learn to speak a new language?</button>
+              <button type="button">How did Singapore tackle corruption?</button>
+            </div>
+          </div>
+        </div>
+        <form id="chat">
+          <label for="question">Your question</label>
+          <div class="compose">
+            <textarea id="question" rows="2" maxlength="600" required placeholder="Ask about leadership, history, or a decision…"></textarea>
+            <button type="submit" id="ask">Ask <span aria-hidden="true">↗</span></button>
+          </div>
+          <p id="mode" class="mode">Source notes mode · No key required</p>
+        </form>
+      </section>
+      <aside class="sidebar" aria-label="Sources and settings">
+        <section class="side-card" aria-labelledby="sources-title">
+          <p class="eyebrow">02 / EVIDENCE</p>
+          <h2 id="sources-title">Reading desk</h2>
+          <p id="source-summary">Sources appear here when you ask a question.</p>
+          <ol id="sources"></ol>
+          <details>
+            <summary>Browse source collection</summary>
+            <ol id="catalog"></ol>
+          </details>
+        </section>
+        <section class="side-card">
+          <details id="settings">
+            <summary>Connect AI Gateway</summary>
+            <label for="key">Vercel AI Gateway key</label>
+            <input id="key" type="password" autocomplete="off" spellcheck="false">
+            <p>With a key, GPT-5 mini synthesizes an answer from retrieved notes. The key goes directly to the Gateway for one request and the field clears on use.</p>
+          </details>
+        </section>
+      </aside>
+    </div>
+    <footer>The Source Room · Section 3 assessment prototype</footer>
+  </main>
+</body>
+</html>
